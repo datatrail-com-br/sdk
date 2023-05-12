@@ -79,6 +79,20 @@
 </script>
 ```
 
+### `Dica`: Para enviar múltiplos produtos, nas páginas de carrinho de compras ou checkout, utilizar laço de repetição para adicionar os produtos na variavel `products`
+Exemplo:
+```
+var products = [];
+
+for( item in internalProductList ) {
+    products.push({
+        productId:    item.productId,
+        productPrice: item.price,
+        quantity:     item.quantity            
+    });
+}
+```
+
 | Propriedade     | Tipo / Formato    | Descrição                                     | 
 | -----------     | -----------       | -----                                         | 
 | productId       | String            |                                               |
