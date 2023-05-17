@@ -106,6 +106,8 @@ for( item in internalProductList ) {
 
 ## Automática
 
+Atenção: Nesta instalação há necessidade de análise da equipe DataTrail, para efetuar corretamente as configurações nas seções do seu site na nossa plataforma. 
+
 ### Deverá colocar o script abaixo, em cada sessão do site, igualmente descrito no formato de integração manual; Por exemplo: Página de Login, Carrinho de Compras, Checkout etc.
 ```
 <script type="text/javascript" src="https://api.datatrail.com.br/sdk/tracker.min.js"></script>
