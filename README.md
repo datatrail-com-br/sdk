@@ -9,9 +9,9 @@
 ### Página de Login
 
 ```
-<script type="text/javascript" src="https://api.datatrail.com.br/sdk/tracker.min.js"></script>
+<script type="text/javascript" src="https://api.datatrail.com.br/sdk/datatrail.min.js"></script>
 <script>
-    tracker
+    datatrail
         .onProfile('Código da conta')        
         .onCustomer({email: "email do cliente"});
 </script> 
@@ -19,9 +19,9 @@
 
 ### Página de Produto
 ```
-<script type="text/javascript" src="https://api.datatrail.com.br/sdk/tracker.min.js"></script>
+<script type="text/javascript" src="https://api.datatrail.com.br/sdk/datatrail.min.js"></script>
 <script>
-    tracker
+    datatrail
         .onProfile('Código da conta')
         .onProduct({
             productId:       "Id do produto",
@@ -36,7 +36,7 @@
 
 ### Página de Carrinho de Compras
 ```
-<script type="text/javascript" src="https://api.datatrail.com.br/sdk/tracker.min.js"></script>
+<script type="text/javascript" src="https://api.datatrail.com.br/sdk/datatrail.min.js"></script>
 <script>
     var products = [];
     
@@ -46,7 +46,7 @@
         quantity:     Quantidade do produto
     });            
 
-    tracker
+    datatrail
         .onProfile('Código da conta')            
         .onCart(products);
 </script>     
@@ -54,7 +54,7 @@
 
 ### Página de Checkout ou Resumo do Pedido
 ```
-<script type="text/javascript" src="https://api.datatrail.com.br/sdk/tracker.min.js"></script>
+<script type="text/javascript" src="https://api.datatrail.com.br/sdk/datatrail.min.js"></script>
 <script>
     var products = [];
     
@@ -64,16 +64,16 @@
         quantity: Quantidade do produto            
     });           
 
-    tracker
+    datatrail
         .onProfile('Código da conta')
         .onCheckout(products);
 </script>  
 ```
 ### Página de Confirmação do Pedido
 ```
-<script type="text/javascript" src="https://api.datatrail.com.br/sdk/tracker.min.js"></script>
+<script type="text/javascript" src="https://api.datatrail.com.br/sdk/datatrail.min.js"></script>
 <script>
-    tracker
+    datatrail
         .onProfile('Código da conta')
         .onConfirmation({orderId: Id do pedido});
 </script>
@@ -110,9 +110,9 @@ Atenção: Nesta instalação há necessidade de análise da equipe DataTrail, p
 
 ### Deverá colocar o script abaixo, em cada sessão do site, igualmente descrito no formato de integração manual; Por exemplo: Página de Login, Carrinho de Compras, Checkout etc.
 ```
-<script type="text/javascript" src="https://api.datatrail.com.br/sdk/tracker.min.js"></script>
+<script type="text/javascript" src="https://api.datatrail.com.br/sdk/datatrail.min.js"></script>
 <script>
-    tracker
+    datatrail
         .onProfile('Código da conta')
         .auto();
 </script>
